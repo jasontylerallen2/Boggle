@@ -320,6 +320,7 @@ namespace Boggle
         {
             String guess = guessBox.Text.ToUpper();
             guessBox.Clear();
+            guessBox.Focus();
             if (solutionsAndPaths.ContainsKey(guess) && !guessed.Contains(guess))
             {
                 guessLabel.Text = "Guess word:";
